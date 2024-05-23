@@ -1,12 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Achmad Rivaldi Dwi Putra Kalkulator Assignment </title>
+    <link rel="stylesheet" href="css/style.css">
+   
 </head>
 
 <body>
+    <header>
+        <h1> Welcome to Calculator</h1>
+        <section>
+            <p align="center">
+                Hai kawan , Selamat datang di Calculator
+            </p>
+        </section>
+    </header>
+
+    <section>
+        <div class="section-content">
+            <h3>Segitiga</h3>
+        </div>
+
+        <button type="button" id="switch-keliling" onclick="switchForm()"><u>Switch ke Keliling segitiga</u></button>
+    </section>
     
+    <div class="main-form active" id="main" >
+        <section>
+            <div class="section-content">
+                <h2>Luas Segitiga</h2>
+             </div>
+    </section>
+
+        <img src="assets/rumus-luas-segitiga-sama-sisi.png" alt="Gambar Segitiga">
+
+        <section>
+            <div class="rumus-segitiga">
+            <p>
+                Rumus Luas segitiga yaitu :
+            </p>
+        
+            <p align="center">
+                <b>L = 1/2 x a x t</b>
+            </p>
+
+            <br>
+            Di mana  :
+            <br>
+            L = Luas
+            <br>
+            a = Panjang alas
+            <br>
+            t = Tinggi
+            </div>
+        </section>
+        <hr/>
+
+        <section>
+            <h1 align="center">Hitung Luas Segitiga</h1>
+            <form action="" method="">
+            <p>
+                <input type="Number" id="alas" placeholder="Nilai alas">
+            </p>
+
+            <p>
+                <input type="Number" id="tinggi" placeholder="Nilai tinggi">
+            </p>
+            
+            </form>
+
+            <div class="hasil" id="hasil-luas">
+                <p>
+                    L = 1/2 x a x t
+                </p>
+        
+                <p id="perhitungan-luas-1"></p>
+        
+                <p id="perhitungan-luas-2"></p>
+        
+            </div>
+
+            <div class="button-center">
+                <button type="button" id="calculate" onclick="hitungLuas()">Hitung</button>
+            </div>
+            
+            
+            <div class="button-right">
+                <button type="button" onclick="resetLuas()">Reset</button>
+            </div>
+            
+        </section>
+    </div>
+    
+    <div class="second-form" id="second">
+        <section>
+            <div class="section-content">
+                <h2>Keliling Segitiga</h2>
+            </div>
+        </section>
+
+            <img src="assets/rumus-luas-segitiga-sama-sisi.png" alt="Gambar Segitiga">
+
+        <section>
+            <div class="rumus-segitiga">
+            <p>
+                Rumus Keliling segitiga yaitu :
+            </p>
+        
+            <p align="center">
+                <b>K = S1 + S2 + S3</b>
+            </p>
+
+            <br>
+            Di mana  :
+            <br>
+            K = Keliling
+            <br>
+            S1 = Sisi A
+            <br>
+            S2 = Sisi B
+            <br>
+            S3 = Sisi C
+            </div>
+        </section>
+        <hr/>
+
+        <section>
+            <h1 align="center">Hitung Keliling Segitiga</h1>
+            <form action="" method="">
+            <p>
+                <input type="Number" id="sisi-a" placeholder="Nilai Sisi A">
+            </p>
+
+            <p>
+                <input type="Number" id="sisi-b" placeholder="Nilai Sisi B">
+            </p>
+
+            <p>
+                <input type="Number" id="sisi-c" placeholder="Nilai Sisi C">
+            </p>
+            
+            </form>
+
+            <div class="hasil" id="hasil-keliling">
+                <p>
+                    K = S1 + S2 + S3
+                </p>
+        
+                <p id="perhitungan-keliling-1"></p>
+        
+                <p id="perhitungan-keliling-2"></p>
+        
+            </div>
+
+            <div class="button-center">
+                <button type="button" onclick="hitungKeliling()">Hitung</button>
+            </div>
+            
+            
+            <div class="button-right">
+                <button type="button" onclick="resetKeliling()">Reset</button>
+            </div>
+            
+        </section>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
