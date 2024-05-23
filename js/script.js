@@ -33,7 +33,7 @@ function hitungLuas() {
 
 
 }
-
+// ini coding hitung 
 function hitungKeliling(){
     const paragrafHasil = document.getElementById('hasil-keliling')
     const sisi1 = document.getElementById('sisi-a').value
